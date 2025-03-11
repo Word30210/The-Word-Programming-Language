@@ -1,6 +1,6 @@
 # The Word Programming Language
 
-**Word** 언어는 Luau로 작성된, 스크립트 언어입니다.
+**Word** 언어는 Luau로 작성된, 정적 스크립트 언어입니다.
 **Word**는 다중 패러다임 언어로, 객체 지향(Object Oriented), 함수형 프로그래밍(Functional Programming), 식 지향(Expression Oriented)을 지원합니다.
 
 **! 현재 Word의 문법은 디자인 단계로, 추후 문법 일부가 변경될 수 있습니다 !**
@@ -49,3 +49,5 @@ stdio.output("\(v1) + \(v2) = \(v3)")
 
 # Language Guide
 - [Syntax](docs/syntax.md)
+- [Operators](docs/operators.md)
+- [Data Types](docs/dataTypes.md)
