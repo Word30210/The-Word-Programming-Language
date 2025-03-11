@@ -9,7 +9,7 @@
 ```lua
 var Vector = class(var x, y, z)
 {
-    -- istance variables
+    -- instance variables
     var x = x | 0
     var y = y | 0
     var z = z | 0
