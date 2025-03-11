@@ -4,11 +4,14 @@
 
 Word 코드는 다음과 같습니다.
 ```lua
-class Rectangle(var width, height)
+var Rectangle = class(var width, height)
 {
     -- instance variables
     var width = width | 0
     var height = height | 0
+
+    -- magic variable, __type__ (set class type to "Vector") (Optional, default class type is "class{UUID}")
+    var __type__ = "Rectangle"
 
     -- instance method
     var area = fn()

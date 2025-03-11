@@ -7,14 +7,14 @@
 
 # What Word code looks like
 ```lua
-class Vector(var x, y, z)
+var Vector = class(var x, y, z)
 {
     -- istance variables
     var x = x | 0
     var y = y | 0
     var z = z | 0
 
-    -- magic variable, __type__ (set class type to "Vector")
+    -- magic variable, __type__ (set class type to "Vector") (Optional, default class type is "class{UUID}")
     var __type__ = "Vector"
 
     -- magic methods (built-in operator overriding)
