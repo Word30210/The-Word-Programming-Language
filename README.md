@@ -51,3 +51,41 @@ stdio.output("\(v1) + \(v2) = \(v3)")
 - [Syntax](Docs/syntax.md)
 - [Operators](Docs/operators.md)
 - [Data Types](Docs/dataTypes.md)
+
+# Benchmark Results
+```lua
+-- 150functions.word
+var func = fn() { return 1 * 2 }
+var func = fn() { return 1 * 2 }
+var func = fn() { return 1 * 2 }
+.
+.
+.
+var func = fn() { return 1 * 2 }
+var func = fn() { return 1 * 2 }
+var func = fn() { return 1 * 2 } -- 151 lines (including comments)
+```
+**VS**
+```py
+# 150functions.py
+def func(): return 1 * 2
+def func(): return 1 * 2
+def func(): return 1 * 2
+.
+.
+.
+def func(): return 1 * 2
+def func(): return 1 * 2
+def func(): return 1 * 2 # 151 lines (including comments)
+```
+word lang: around **0.3s**
+python: around **0.003s**
+<span style="color:gray; font-size:75%">bro!!! wth.. fix your code rn!!!</span>
+<span style="color:gray; font-size:50%">솔직히 python은 아무리 느리다고해도 py -> c -> asm -> binarycode 인 반면에</span>
+<span style="color:gray; font-size:50%">word land은 word -> cpp -> c or asm -> asm -> binarycode인지라 어찌보면 당연한 결과...</span>
+
+# TODO LIST
+- `Ast/Lexer.luau`, `Ast/Parser.luau` 최대한 최적화 하기
+- `Complier/bytecodeBuilder.luau` 만들기
+- `Ast/Lexer.luau`의 `Location` 오차 이슈 수정하기
+- `Docs` 완성하기 + `github.io` 만들기
