@@ -48,6 +48,6 @@ stdio.output("\(v1) + \(v2) = \(v3)")
 # Features
 
 # Language Guide
-- [Syntax](docs/syntax.md)
-- [Operators](docs/operators.md)
-- [Data Types](docs/dataTypes.md)
+- [Syntax](Docs/syntax.md)
+- [Operators](Docs/operators.md)
+- [Data Types](Docs/dataTypes.md)
